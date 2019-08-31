@@ -1,0 +1,21 @@
+<div class="mycontainer">
+        <form [formGroup]="house">
+        <mat-form-field>
+            <input matInput formControlName="label" placeholder="House Label">
+        </mat-form-field>
+        <div formGroupName="adress">
+        <mat-form-field>
+            <input matInput formControlName="street" placeholder="Street">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput formControlName="city" placeholder="City">
+        </mat-form-field>
+    </div>
+        <mat-form-field>
+            <input matInput formControlName="price" placeholder="Price">
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button color="primary" (click)="saveHouse()">Save</button>
+</div>
